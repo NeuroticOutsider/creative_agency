@@ -15,4 +15,17 @@ $(function() {
       body.removeClass('bg-dark');
     }
   });
+
+  $('#play').click(function() {
+    setTimeout(function(){
+      $('#play').addClass('design__video-btn--hide');
+    }, 800);
+  });
 });
+
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('videoiFrame', {
+  playerVars: { 'autoplay': 0, 'showinfo': 0, 'rel': 0},
+  videoId: 'jRcfE2xxSAw'
+  });
+};
