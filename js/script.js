@@ -21,6 +21,9 @@ $(function() {
       $('#play').addClass('design__video-btn--hide');
     }, 800);
   });
+
+  baguetteBox.run('.work__gallery');
+
 });
 
 function onYouTubeIframeAPIReady() {
