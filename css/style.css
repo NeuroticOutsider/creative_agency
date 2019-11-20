@@ -466,5 +466,25 @@ h5 {
         margin-top: 50px; }
     .work__button {
       margin-top: 20px; } }
+.brands {
+  background-color: #4b2d7f;
+  padding-bottom: 0; }
+  .brands__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 95px; }
+
+@media (max-width: 767px) {
+  .brands {
+    padding-top: 60px; }
+    .brands__item {
+      margin-bottom: 60px; } }
 
 
