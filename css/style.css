@@ -503,8 +503,6 @@ h5 {
     .brands__item {
       margin-bottom: 60px; } }
 .reviews {
-  background-size: cover;
-  background-position: center;
   padding: 0;
   background-color: #000000;
   padding-top: 15px; }
@@ -549,9 +547,77 @@ h5 {
 @media (max-width: 767px) {
   .reviews__photo {
     display: none; }
-  .reviews .carousel-control-prev, .reviews .carousel-control-next {
-    display: none; }
+  .reviews h2 {
+    font-size: 26px; }
+  .reviews h4 {
+    font-size: 30px; }
+  .reviews__text {
+    margin-top: 40px;
+    padding-left: 30px; }
+    .reviews__text p {
+      font-size: 16px; }
+    .reviews__text:after {
+      font-size: 45px; }
+  .reviews__author {
+    margin-top: 30px;
+    padding-left: 30px; }
+  .reviews__star {
+    margin-bottom: 10px; }
+    .reviews__star img {
+      width: 80px; }
+  .reviews__name {
+    font-size: 18px; }
   .reviews__review {
-    padding: 40px 20px; } }
+    width: 81%;
+    margin: auto; } }
+.help__button {
+  margin: 0;
+  background-color: #4b2d7f;
+  -webkit-box-shadow: 0 7px 0 #a57ee9;
+  box-shadow: 0 7px 0 #a57ee9;
+  height: 45px;
+  line-height: 45px; }
+  .help__button:hover {
+    background-color: #352059;
+    -webkit-box-shadow: 0 4px 0 #8752e2;
+    box-shadow: 0 4px 0 #8752e2; }
+.help h4 {
+  margin-bottom: 20px; }
+.help h6 {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 25px; }
+.help__form {
+  margin-top: 50px; }
+  .help__form .form-control {
+    height: 100%;
+    padding-left: 30px;
+    background-color: rgba(255, 255, 255, 0.35);
+    border-radius: 10px;
+    border: none;
+    min-height: 50px;
+    color: #ffffff; }
+    .help__form .form-control:focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(75, 45, 127, 0.25);
+      box-shadow: 0 0 0 0.2rem rgba(75, 45, 127, 0.25); }
+    .help__form .form-control::-webkit-input-placeholder {
+      font-size: 15px;
+      color: #ffffff; }
+    .help__form .form-control::-moz-placeholder {
+      font-size: 15px;
+      color: #ffffff; }
+    .help__form .form-control:-moz-placeholder {
+      font-size: 15px;
+      color: #ffffff; }
+    .help__form .form-control:-ms-input-placeholder {
+      font-size: 15px;
+      color: #ffffff; }
+
+@media (max-width: 991px) {
+  .help {
+    padding: 60px 0;
+    padding-bottom: 30px; }
+    .help__form-elements {
+      margin-bottom: 30px; } }
 
 
