@@ -619,5 +619,20 @@ h5 {
     padding-bottom: 30px; }
     .help__form-elements {
       margin-bottom: 30px; } }
+.socials {
+  background-color: #4b2d7f;
+  padding: 60px 0;
+  padding-bottom: 40px; }
+  .socials__item {
+    margin-bottom: 20px; }
+    .socials__item a {
+      font-size: 24px;
+      color: #ffffff;
+      -webkit-transition: opacity 0.3s;
+      -o-transition: opacity 0.3s;
+      transition: opacity 0.3s; }
+      .socials__item a:hover {
+        text-decoration: none;
+        opacity: 0.5; }
 
 
