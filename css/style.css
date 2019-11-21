@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Montserrat", sans-serif;
   min-width: 320px;
@@ -365,7 +366,8 @@ h5 {
 .design__read-more {
   margin-top: 55px; }
 .design__item img {
-  width: 75px; }
+  width: 75px;
+  height: 70px; }
 .design__item h6 {
   font-size: 25px;
   line-height: 29px;
@@ -395,6 +397,10 @@ h5 {
     cursor: pointer; }
     .design__video-btn--hide {
       display: none; }
+    .design__video-btn:hover .design__btn-composition {
+      background-color: #d80b4e; }
+      .design__video-btn:hover .design__btn-composition:after {
+        opacity: 0.7; }
 .design__btn-composition {
   width: 96px;
   height: 96px;
@@ -413,10 +419,20 @@ h5 {
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
-  .design__btn-composition img {
-    width: 36px;
-    margin-left: 8px; }
+  justify-content: center;
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s; }
+  .design__btn-composition:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/other/icon_play.svg");
+    background-repeat: no-repeat;
+    background-position: 56% center;
+    -webkit-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s; }
 
 @media (max-width: 767px) {
   .design {
@@ -486,5 +502,56 @@ h5 {
     padding-top: 60px; }
     .brands__item {
       margin-bottom: 60px; } }
+.reviews {
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  background-color: #000000;
+  padding-top: 15px; }
+  .reviews__carousel {
+    position: relative;
+    z-index: 10; }
+  .reviews__review {
+    padding: 60px 0; }
+  .reviews__text {
+    position: relative;
+    margin-top: 60px;
+    padding-left: 40px; }
+    .reviews__text:after {
+      content: "“";
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #f42267;
+      font-size: 60px;
+      font-style: italic;
+      font-weight: 700; }
+    .reviews__text p {
+      font-size: 18px;
+      font-style: italic;
+      font-weight: 400; }
+  .reviews__author {
+    margin-top: 55px;
+    padding-left: 40px; }
+  .reviews__star {
+    margin-bottom: 20px; }
+  .reviews__name {
+    font-size: 20px;
+    font-weight: 400; }
+  .reviews__photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end; }
+
+@media (max-width: 767px) {
+  .reviews__photo {
+    display: none; }
+  .reviews .carousel-control-prev, .reviews .carousel-control-next {
+    display: none; }
+  .reviews__review {
+    padding: 40px 20px; } }
 
 
