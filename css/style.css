@@ -350,12 +350,14 @@ h5 {
         height: 40px;
         line-height: 40px;
         padding: 0 15px; } }
-.watch__tab-text p {
-  margin: 0; }
-.watch__main-image {
-  text-align: right; }
-  .watch__main-image img {
-    max-width: 400px; }
+.watch {
+  padding-bottom: 30px; }
+  .watch__tab-text p {
+    margin: 0; }
+  .watch__main-image {
+    text-align: right; }
+    .watch__main-image img {
+      max-width: 400px; }
 
 @media (max-width: 767px) {
   .watch {
