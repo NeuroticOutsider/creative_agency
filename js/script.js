@@ -1,4 +1,11 @@
 $(function() {
+
+  $(window).on('load', function() {
+		$('.preloader').delay(500).fadeOut('slow', function(){
+      $(this).attr('style', 'display: none !important');
+    });
+  });
+  
   $('.navbar-toggler').click(function(){
     var menuBtn = $('.navbar-toggler .fa'),
         body = $('body');
@@ -23,6 +30,18 @@ $(function() {
   });
 
   baguetteBox.run('.work__gallery');
+
+  $(window).scroll(function() {
+		if ($(this).scrollTop() > $(this).height()) {
+			$('.scroll__top').addClass("active");
+		} else {
+			$('.scroll__top').removeClass("active");
+		};
+	});
+
+	$('.scroll__top').click(function() {
+		$('html, body').stop().animate({scrollTop: 0}, 'slow', 'swing');
+	});
 
 });
 
