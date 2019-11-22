@@ -106,6 +106,9 @@ h5 {
     box-shadow: 0 5px 0 #ff266e;
     background-color: #d80b4e; }
 
+.footer, .copyright {
+  font-family: "Poppins Semi Bold", sans-serif; }
+
 @media (max-width: 767px) {
   h5 {
     font-size: 26px; }
@@ -634,5 +637,75 @@ h5 {
       .socials__item a:hover {
         text-decoration: none;
         opacity: 0.5; }
+
+.footer {
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  padding-bottom: 40px; }
+  .footer__list {
+    margin-bottom: 50px; }
+    .footer__list h6 {
+      font-weight: 700;
+      font-size: 22px;
+      color: #4b2d7f;
+      line-height: 1;
+      margin-bottom: 20px; }
+    .footer__list ul {
+      padding: 0;
+      list-style: none;
+      margin: 0;
+      padding-left: 15px; }
+      .footer__list ul li a {
+        color: #171717;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s; }
+  .footer__image {
+    margin-bottom: 15px; }
+    .footer__image img {
+      max-height: 175px;
+      -o-object-fit: cover;
+      object-fit: cover;
+      height: 100%;
+      border-radius: 15px; }
+
+.copyright {
+  background-color: #f6f6f6;
+  padding: 40px 0;
+  font-weight: 700; }
+  .copyright .nav-link {
+    color: #171717;
+    font-size: 16px; }
+    .copyright .nav-link:hover {
+      text-decoration: underline; }
+    .copyright .nav-link span {
+      margin-right: 3px; }
+  .copyright .nav-item {
+    position: relative; }
+    .copyright .nav-item:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 3px;
+      height: 3px;
+      background-color: #171717;
+      border-radius: 50%; }
+    .copyright .nav-item:last-child:after {
+      display: none; }
+
+@media (max-width: 575px) {
+  .copyright {
+    padding: 30px 0; }
+    .copyright .nav {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .copyright .nav-item:after {
+        display: none; }
+      .copyright .nav-item a {
+        font-size: 15px; } }
 
 
