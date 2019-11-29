@@ -47,7 +47,7 @@ $(function() {
 
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('videoiFrame', {
-  playerVars: { 'autoplay': 0, 'showinfo': 0, 'rel': 0},
+  playerVars: { 'autoplay': 0, 'showinfo': 0, 'rel': 0, 'origin':'https://neuroticoutsider.github.io'},
   videoId: 'jRcfE2xxSAw'
   });
 };
